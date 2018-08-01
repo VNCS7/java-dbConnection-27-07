@@ -25,5 +25,18 @@ public class AlunosJdbcDAO {
 		
 
 }
+	public void deletar(int idSelect) throws SQLException {
+		String sql = "delete from alunos where id='"+idSelect+"'";		
+		System.out.println(sql);
+		PreparedStatement prepareStatement = this.conn.prepareStatement(sql);
+		prepareStatement.executeUpdate();
+		prepareStatement.close();
+}
+	
+	public void atualizar(int idSelect, String novoNome,String novoEndereco,String novoBairro,String novoCEP){
+		
+	}
+		
+	}
 	
 }

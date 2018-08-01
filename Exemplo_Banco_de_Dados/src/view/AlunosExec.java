@@ -12,14 +12,16 @@ public class AlunosExec {
 		
 		try{
 			
-			alunos.setNome("Vinícius Alves Rodrigues");
-			alunos.setEndereco("Rua Milagre dos Peixes, 52");
+			/*alunos.setNome("Viícius Alves Rodrigues");
+			alunos.setEndereco("Rua Milagre dos Peixes,52");
 			alunos.setBairro("Castro Alves");
-			
+			alunos.setCep(08474120);
+			*/
 			Connection connection = JdbUtil.getConnection();
 			AlunosJdbcDAO alunosJdbcDao = new AlunosJdbcDAO(connection);
 			
-			alunosJdbcDao.salvar(alunos);
+			//alunosJdbcDao.salvar(alunos);
+			//alunosJdbcDao.deletar(1);
 		}catch (Exception e){
 			e.printStackTrace();
 		}
