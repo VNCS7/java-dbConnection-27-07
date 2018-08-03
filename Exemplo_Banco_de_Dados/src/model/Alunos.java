@@ -1,16 +1,26 @@
 package model;
 
 public class Alunos {
+	private int id = 0;
 	private String nome = "";
 	private String endereco = "";
 	private String bairro = "";
-	private int cep = 0;
+	private int cep=0;
 	
 	public String getNome() {
 		return nome;
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public void setCep(Integer cep) {
+		this.cep = cep;
 	}
 	public String getEndereco() {
 		return endereco;
